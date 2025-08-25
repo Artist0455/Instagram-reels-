@@ -11,12 +11,12 @@ RAPIDAPI_HOST = os.getenv("RAPIDAPI_HOST")  # e.g. "instagram-scraper-2022.p.rap
 # ---------- Start ----------
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
-        [InlineKeyboardButton("📢 Support Channel", url="https://t.me/YourChannel")]
+        [InlineKeyboardButton("📢 Support Channel", url="https://t.me/bye_artist")]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await update.message.reply_animation(
-        animation="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif",
+        animation="https://files.catbox.moe/lhbsqt.mp4",
         caption="👋 <b>Welcome to Reels Downloader Bot!</b>\n\n📌 Just send me an Instagram Reels link.",
         parse_mode="HTML",
         reply_markup=reply_markup
